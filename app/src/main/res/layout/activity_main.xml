@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/loginback"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/logintext"
+        android:text="Login"
+        android:textSize="40sp"
+        android:textColor="@color/white"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="210dp"/>
+    <EditText
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:layout_centerInParent="true"
+        android:padding="8dp"
+        android:clickable="false"
+        android:id="@+id/loginedit1"
+        android:hint="Email"
+        android:textColorHint="@color/white"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:layout_below="@id/logintext"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/halfborder"
+        android:drawableRight="@drawable/mail"
+        />
+    <EditText
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:padding="8dp"
+        android:clickable="false"
+        android:id="@+id/loginedit2"
+        android:text="Password"
+        android:textSize="20sp"
+        android:layout_below="@id/loginedit1"
+        android:textColor="@color/white"
+        android:background="@drawable/halfborder2"
+        android:layout_marginStart="42dp"
+        android:drawableRight="@drawable/lock"/>
+
+    <CheckBox
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:padding="5dp"
+        android:buttonTint="@color/white"
+        android:clickable="true"
+        android:id="@+id/loginedit3"
+        android:textSize="20sp"
+        android:hint="Remember me"
+        android:layout_below="@id/loginedit2"
+        android:textColorHint="@color/white"
+        android:layout_marginStart="48dp"
+        android:background="@drawable/halfborder3"/>
+
+    <Button
+        android:layout_width="290dp"
+        android:layout_height="50dp"
+        android:text="Submit"
+        android:textColor="@color/white"
+        android:id="@+id/buttonsubmit"
+        android:layout_below="@id/loginedit3"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/buttonedit"/>
+
+</RelativeLayout>
